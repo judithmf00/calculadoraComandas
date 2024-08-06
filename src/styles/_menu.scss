@@ -1,0 +1,34 @@
+.containerMenu{
+
+    &__title{
+        text-align: center;
+        @include font('italianno',200,60px);
+    }
+
+    ul li{
+        background-color: $blue-light;
+        border: 1px solid $gold;
+        margin: 20px 0px;
+        padding: 2px 15px;
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        p{
+            @include font('italianno',200,28px);
+            
+            &:first-child{
+                @include font('Josefin Slab',300,22px);
+
+                overflow: hidden;
+                word-break: break-all;
+            }
+        }
+    }
+    
+
+    
+}

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  color: #fefefe;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #212634;
+  height: 100vh;
+}
+
+.containerMenu__title {
+  text-align: center;
+  font-family: "italianno";
+  font-weight: 200;
+  font-size: 60px;
+}
+.containerMenu ul li {
+  background-color: #292F3F;
+  border: 1px solid #DD9943;
+  margin: 20px 0px;
+  padding: 2px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.containerMenu ul li p {
+  font-family: "italianno";
+  font-weight: 200;
+  font-size: 28px;
+}
+.containerMenu ul li p:first-child {
+  font-family: "Josefin Slab";
+  font-weight: 300;
+  font-size: 22px;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.containerPedido {
+  background-color: rgb(146, 38, 38);
+}
+
+/*# sourceMappingURL=main.css.map */
