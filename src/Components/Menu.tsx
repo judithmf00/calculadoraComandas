@@ -4,15 +4,15 @@ export default function Menu() {
       <section className="containerMenu w-1/2 m-auto content-center">
         <h1 className="containerMenu__title">Menú</h1>
         <ul>
-            <li className="">
+            <li>
                 <p>Pizza con ñawsfdsdfsdfsdfsdfsdfazsdasdassd</p>
                 <p>30€</p>
             </li>
-            <li className="">
+            <li>
                 <p>Pizza</p>
                 <p>30€</p>
             </li>
-            <li className="">
+            <li>
                 <p>Pizza</p>
                 <p>30€</p>
             </li>
