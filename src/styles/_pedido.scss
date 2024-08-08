@@ -5,10 +5,122 @@
     border-radius: 10px;
     padding: 5px 15px;
 
+    & > div{
+        overflow-y: auto;
+    }
     &__productos{
         &__title{
             text-align: center;
             @include font('italianno',200,50px);
         }
+        ul li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1.5px solid $white;
+            border-bottom: 1.5px solid $white;
+            margin: 6px 0px;
+            padding: 0px 10px;
+
+            div {
+                width: 90%;
+
+                p{
+                    line-height: 35px;
+                    @include font('Josefin Slab',600,18px);
+
+                    &:first-child{
+                        @include font('Josefin Slab',300,22px);
+                        overflow: hidden;
+                        word-break: break-all;
+                    }
+                }
+            }
+              
+            button{
+                background-color: $gold;
+                width: 25px;
+                height: 25px;
+                border-radius: 100px;
+                color: $blue-light;
+                font-family:'Courier New', Courier, monospace;
+                font-weight:bold;
+
+                &:hover{
+                    transform: scale(1.05)
+                }
+            }
+            
+        }
+        
+    }
+
+    &__propina{
+        border-top: 1.5px dotted $gold;
+        border-bottom: 1.5px dotted $gold;
+        margin-top:10px 0px;
+        padding: 0px 10px;
+
+        h3{
+            @include font('Josefin Slab',600,28px);
+        }
+
+        label{
+            span{
+                margin-right: 20px;
+            }
+
+            input[type="radio"] {
+                appearance: none; /* Quitar el estilo por defecto */
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                width: 16px;
+                height: 16px;
+                border: 1px solid $gold; 
+                border-radius: 50%; 
+                position: relative;
+                cursor: pointer;
+                margin: 0px 4px;
+              }
+              
+              input[type="radio"]:checked {
+                background-color: $gold; /* Rellenar con dorado cuando esté seleccionado */
+              }
+              
+              input[type="radio"]:checked::before {
+                content: "";
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+              
+        }
+    }
+
+    &__total{
+        border-top: 1.5px dotted $gold;
+        border-bottom: 1.5px dotted $gold;
+        padding: 0px 10px;
+        
+        h3{
+            @include font('Josefin Slab',600,28px);
+        }
+        p{
+            @include font('Josefin Slab',200,18px);
+        }
+    }
+
+    & > button{
+        background-color: $gold;
+        @include font('Josefin Slab',600,24px);
+        padding: 0px 35px;
+        margin: 10px;
+        border-radius: 5px;
     }
 }

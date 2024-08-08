@@ -6,3 +6,25 @@
     background-color: $blue-dark;
     height: 100vh;
 }
+
+span{
+    @include font('italianno',200,28px);
+}
+
+/* Estilos barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Fondo de la barra */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Estilo de la "thumb" */
+::-webkit-scrollbar-thumb {
+    background: $gold; 
+    border-radius: 6px;
+}
+
+  
