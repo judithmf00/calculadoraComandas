@@ -9,6 +9,8 @@
         background-color: $blue-light;
         border: 1px solid $gold;
         margin: 20px 0px;
+        margin-right: 20px;
+        margin-left: 10px;
         padding: 2px 15px;
         border-radius: 10px;
 
@@ -16,6 +18,13 @@
         justify-content: space-between;
         align-items: center;
         gap: 20px;
+
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover{
+            transform: scale(1.02)
+        }
 
         p{
             @include font('italianno',200,28px);

@@ -4,11 +4,9 @@
     border: 1px dotted $gold;
     border-radius: 10px;
     padding: 5px 15px;
-    
-    & > div{
-        overflow-y: auto;
-    }
+
     &__productos{
+        overflow-y: auto;
         &__title{
             text-align: center;
             @include font('italianno',200,50px);
@@ -58,7 +56,7 @@
     &__propina{
         border-top: 1.5px dotted $gold;
         border-bottom: 1.5px dotted $gold;
-        margin-top:10px 0px;
+        margin-top:10px;
         padding: 0px 10px;
 
         h3{

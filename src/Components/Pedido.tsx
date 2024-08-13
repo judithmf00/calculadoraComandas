@@ -1,9 +1,30 @@
 export default function Pedido() {
   return (
-    <section className="containerPedido content-center flex flex-col h-[90%] w-full">
+    <section className="containerPedido content-center flex flex-col w-full h-[90vh]">
       <h2 className="containerPedido__productos__title">Pedido</h2>
-      <div className="containerPedido__productos flex-grow-[7]">
+      <div className="containerPedido__productos ">
         <ul>
+          <li>
+            <div>
+              <p>Pizza con fsdqweqweqwefszsdasdassd - <span>30€</span> </p>
+              <p>Cantidad: 1 - <span> 30€</span></p>
+            </div>
+            <button>X</button>
+          </li>
+          <li>
+            <div>
+              <p>Pizza con fsdqweqweqwefszsdasdassd - <span>30€</span> </p>
+              <p>Cantidad: 1 - <span> 30€</span></p>
+            </div>
+            <button>X</button>
+          </li>
+          <li>
+            <div>
+              <p>Pizza con fsdqweqweqwefszsdasdassd - <span>30€</span> </p>
+              <p>Cantidad: 1 - <span> 30€</span></p>
+            </div>
+            <button>X</button>
+          </li>
           <li>
             <div>
               <p>Pizza con fsdqweqweqwefszsdasdassd - <span>30€</span> </p>
@@ -54,7 +75,6 @@ export default function Pedido() {
       <button className="self-center mt-4">
         Guardar
       </button>
-      
     </section>
   );
 }
