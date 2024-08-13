@@ -4,11 +4,11 @@
 @tailwind utilities;
 * {
   color: #fefefe;
+  box-sizing: border-box;
 }
 
 .main {
   background-color: #212634;
-  height: 100vh;
 }
 
 span {

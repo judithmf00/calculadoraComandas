@@ -1,22 +1,19 @@
+import { menuItems } from "../data/db"
+import MenuItem from "./MenuItem"
 
 export default function Menu() {
     return (
-      <section className="containerMenu w-1/2 m-auto content-center">
+      <section className="containerMenu w-full content-center h-screen">
         <h1 className="containerMenu__title">Menú</h1>
-        <ul>
-            <li>
-                <p>Pizza con ñawsfdsdfsdfsdfsdfsdfazsdasdassd</p>
-                <p>30€</p>
-            </li>
-            <li>
-                <p>Pizza</p>
-                <p>30€</p>
-            </li>
-            <li>
-                <p>Pizza</p>
-                <p>30€</p>
-            </li>
-        </ul>
+        <div className="overflow-y-auto h-[85%]">
+          {menuItems.map(item=>(
+            <MenuItem 
+              key={item.id}
+              item={item}
+            />
+          ))}
+        </div>
+        
       </section>
     )
   }

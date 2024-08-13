@@ -1,6 +1,6 @@
 export default function Pedido() {
   return (
-    <section className="containerPedido w-1/2 content-center flex flex-col h-full">
+    <section className="containerPedido content-center flex flex-col h-[90%] w-full">
       <h2 className="containerPedido__productos__title">Pedido</h2>
       <div className="containerPedido__productos flex-grow-[7]">
         <ul>
@@ -44,7 +44,6 @@ export default function Pedido() {
         </label>
       </div>
 
-
       <div className="containerPedido__total flex-grow-[1]">
         <h3>Total y propina:</h3>
         <p>Subtotal a pagar: </p>
@@ -55,7 +54,7 @@ export default function Pedido() {
       <button className="self-center mt-4">
         Guardar
       </button>
-
+      
     </section>
   );
 }
