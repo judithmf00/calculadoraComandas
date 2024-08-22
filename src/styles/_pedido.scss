@@ -7,6 +7,7 @@
 
     &__productos{
         overflow-y: auto;
+        
         &__title{
             text-align: center;
             @include font('italianno',200,50px);

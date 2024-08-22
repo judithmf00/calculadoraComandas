@@ -1,3 +1,9 @@
+import { OrderItem } from '../types';
+
+type OrderItemProps = {
+  order : OrderItem[],
+}
+
 export default function Pedido() {
   return (
     <section className="containerPedido content-center flex flex-col w-full h-[90vh]">

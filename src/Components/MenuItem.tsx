@@ -1,19 +1,17 @@
-import React from 'react'
-import type { MenuItem } from '../types'
+import type { TMenuItem } from '../types'
 
 // Indicar de que tipo es el dato item, lo pasamos por props en Menu
 type MenuItemProps = {
-    item : MenuItem
+    item : TMenuItem,
+    addItem : (item: TMenuItem)=> void
 }
 
-export default function MenuItem({item}:MenuItemProps) {
+export default function MenuItem({item,addItem}:MenuItemProps) {
   return (
-       <ul>
-            <li>
-                <p>{item.name}</p>
-                <p>{item.price}€</p>
-            </li>
-        </ul> 
+        <li onClick={()=>addItem(item)}>
+            <p>{item.name}</p>
+            <p>{item.price}€</p>
+        </li>
     
   )
 }
