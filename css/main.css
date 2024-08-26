@@ -137,8 +137,8 @@ span {
   font-weight: 600;
   font-size: 28px;
 }
-.containerPedido__propina section {
-  margin-top: 5px;
+.containerPedido__propina div {
+  background-color: rebeccapurple;
 }
 .containerPedido__propina div label {
   margin-right: 20px;

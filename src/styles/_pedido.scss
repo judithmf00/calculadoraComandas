@@ -64,8 +64,12 @@
             @include font('Josefin Slab',600,28px);
         }
 
-        label{
-            span{
+        section{
+            margin-top: 5px;
+        }
+
+        div{
+            label{
                 margin-right: 20px;
             }
 

@@ -3,6 +3,7 @@ import type { TMenuItem, OrderItem } from "../types"
 
 export default function useOrder() {
     const [order,setOrder] = useState<OrderItem[]>([])
+    const [tip,setTip] = useState(0)
 
     const addItem =(item : TMenuItem)=>{
         const itemExists = order.find((orderItem)=>orderItem.id === item.id)
@@ -10,7 +11,7 @@ export default function useOrder() {
         if (itemExists) {
             // Creamos nuevo arreglo con la cantidad actualizada
             const updateOrder = order.map((orderItem)=> orderItem.id === item.id ? 
-                                                                        {...orderItem,quantity: orderItem.quantity +1 } 
+                                                                        {...orderItem,quantity: orderItem.quantity + 1 } 
                                                                                 : 
                                                                         orderItem)
             setOrder(updateOrder)
@@ -19,13 +20,23 @@ export default function useOrder() {
             const newItem ={...item,quantity:1} 
             setOrder([...order,newItem])
         }
-
         
     }
-    console.log(order)
 
+    const removeItem = (id : TMenuItem['id']) =>{
+        setOrder(order.filter((orderItem) => orderItem.id !== id))
+    }
+
+    const placeOrder = ()=>{
+        setOrder([])
+        setTip(0)
+    }
     return {
         order,
-        addItem
+        placeOrder,
+        tip,
+        setTip,
+        addItem,
+        removeItem
     }
 }

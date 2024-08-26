@@ -1,10 +1,12 @@
 import { menuItems } from "../data/db"
 import MenuItem from "./MenuItem"
-import useOrder from "../hooks/useOrder"
+import type { TMenuItem } from '../types';
 
+type MenuProps = {
+  addItem: (item: TMenuItem) => void;
+};
 
-export default function Menu() {
-    const { addItem } =useOrder()
+export default function Menu({ addItem }: MenuProps) {
 
     return (
       <section className="containerMenu w-full content-center h-screen">
